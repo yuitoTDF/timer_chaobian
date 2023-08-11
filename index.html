@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>倒计时活动</title>
+  <link rel="stylesheet" href="./static/index.css">
+  <script src="./static/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<a id="tab-screen" title="全屏显示" href="javascript:;"></a>
+		</div>
+		<div class="sidebar">
+      <p class="title">选择版本</p>
+			<ul>  
+        <li version="1">5分钟超变战场</li>
+        <li version="2">无效</li>
+        <li version="3">无效</li>
+        <li version="4">无效</li>
+      </ul>
+		</div>
+		<div class="content">
+			<div class="count-down">
+        <div class="section-title" style="width:620px;"></div>
+        <span class="minute time-item">00</span>
+        <span class="second time-item">00</span>
+        <div class="sub-time">
+          <span>总时长还剩</span>
+          <p><span class="sub-min sub-itme">05</span><span class="sub-s sub-itme">00</span></p>
+        </div>
+			</div>
+		</div>
+  </div>
+  <audio class="end-audio"></audio>
+  <audio class="start" src="./static/start.mp3"></audio>
+  <script src="./static/index.js"></script>
+</body>
+</html>

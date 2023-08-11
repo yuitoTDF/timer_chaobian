@@ -1,0 +1,152 @@
+body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+}
+.main{
+  position: relative;
+  max-width: 1920px;
+  min-width: 1200px;
+  height: 1080px;
+  background: url(./bj_chaobian.jpg) no-repeat center;
+  margin: 0 auto;
+  transition: all .3s linear;
+}
+.lyxj{
+  background: url(./bg_lyxj.jpg) no-repeat center;
+ 
+}
+.jmzqs{
+  background: url(./bg_jmzqs.jpg) no-repeat center;
+}
+.sidebar{
+  position: absolute;
+  top: 246px;
+  left: 34px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: none;
+}
+.sidebar .title{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  background: #00235c;
+}
+.sidebar li{
+  list-style: none;
+  width: 180px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  color: #1f4ea1;
+  background:#fff;
+  opacity: .3;
+  border-bottom: 1px solid #1f4ea1;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+.sidebar li:last-child{
+  border: none;
+}
+.sidebar li.tab{
+opacity: .8;
+}
+.content{
+  position: relative;
+  width:1200px;
+  margin: 20px auto;
+}
+.content .count-down{
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  width: 1000px;
+  height: 600px;
+  margin-left: -500px;
+  background: url(./cbtime_bg.png) no-repeat center;
+}
+
+.content .count-down .section-title{
+  /*position: absolute;*/
+  top: 100px;
+  left: 0;
+  font-size: 70px;
+  color: #fff;
+  /*width: 50px;*/
+  font-weight: bold;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.content .count-down .time-item{
+  color: #fff;
+  font-size: 240px;
+  letter-spacing: 49px;
+  font-weight: bold;
+}
+.content .count-down .minute{
+  position: absolute;
+  top: 96px;
+  left: 110px;
+}
+.content .count-down .second{
+  position: absolute;
+  top: 96px;
+  left: 576px;;
+}
+.count-down .sub-time{
+  position: absolute;
+  top: 392px;
+  left: 88px;
+  width: 824px;
+  line-height: 72px;
+  display: flex;
+  flex-wrap: nowrap;
+  color: #fff;
+}
+.count-down .sub-time>span{
+  width: 364px;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 8px;
+}
+.count-down .sub-time>p{
+  position: absolute;
+  top: 4px;
+  right: 108px;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+.count-down .sub-time>p span{
+  font-size: 55px;
+  margin: 0 30px;
+}
+.header{
+  padding: 20px;
+  overflow: hidden;
+}
+#tab-screen{
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  opacity: .5;
+  cursor: pointer;
+  background: url(./fullscreen.png) no-repeat;
+  background-position: 0 0; 
+}
+audio{
+  display: none;
+}
